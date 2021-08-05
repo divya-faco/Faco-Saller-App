@@ -73,7 +73,7 @@ class HomeActivity : AppCompatActivity() {
                 R.id.menu_feedback ->{
                     startActivity(Intent(this,PatientFeedbackActivity::class.java)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK))
-                    drawerLayout.closeDrawer(GravityCompat.START)
+                        drawerLayout.closeDrawer(GravityCompat.START)
                 }
             }
             true
