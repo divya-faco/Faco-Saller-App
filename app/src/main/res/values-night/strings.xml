@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="i_want_to_register_as_a">I want to register as a :</string>
+    <string name="register_as_a_medical_shop_owner">Register as a Medical Shop Owner</string>
+    <string name="test_lab">Test Lab</string>
+    <string name="register_as_a_test_lab">Register as a Test Lab</string>
+    <string name="contactless_digital_healthcare_solution">Contactless digital healthcare solution</string>
+    <string name="your_housepital">Your HousePital</string>
+    <string name="tests_your_center_provides">TESTS YOUR CENTER PROVIDES</string>
+    <string name="enter_your_address">ENTER YOUR ADDRESS</string>
+    <string name="city">CITY</string>
+    <string name="state">STATE</string>
+    <string name="jaipur">Jaipur</string>
+    <string name="rajasthan">Rajasthan</string>
+    <string name="country">Country</string>
+    <string name="india">India</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#FCFDFF"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/liner_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/add_medicine"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Prescription Sent!"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/add_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableTop="@drawable/ic_add_medicine_24"
+                    android:drawableTint="#515151"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Add Medicine"
+                    android:textColor="#515151"
+                    android:textSize="10dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/check_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableTop="@drawable/ic_baseline_check_circle"
+                    android:drawableTint="#515151"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Medicine Uploaded"
+                    android:textColor="#515151"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_below="@id/patient_name"
+                    android:layout_toLeftOf="@id/add_medicine"
+                    android:id="@+id/patient_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="1dp"
+                    android:text="address"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/patient_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/patient_phone"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@id/add_medicine"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="1dp"
+                    android:text="quotation"
+                    android:textColor="#6F6F6F"
+                    android:textSize="10dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/prescription_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Prescription Download" />
+        </LinearLayout>
+
+
+        <!--            </LinearLayout>-->
+
+    </RelativeLayout>
+    <!--    </androidx.cardview.widget.CardView>-->
+
+</androidx.cardview.widget.CardView>

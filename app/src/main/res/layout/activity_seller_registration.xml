@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SellerRegistrationActivity"
+    android:background="@color/purple_500"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ellipse_9__1_"
+        android:layout_alignParentRight="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rgister_background">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_register_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="@string/i_want_to_register_as_a"
+                android:textColor="@color/purple_500"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_20dp"
+                android:backgroundTint="#E6F0F3"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/md_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_medical_shop" />
+
+                <TextView
+                    android:id="@+id/txt_md_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/md_image"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="@string/medical_shop"
+                    android:textColor="@color/purple_500"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_md_shop"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/md_image"
+                    android:fontFamily="@font/gilroy_light"
+                    android:text="@string/register_as_a_medical_shop_owner"
+                    android:textColor="@color/purple_500"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_right_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_lab_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_20dp"
+                android:backgroundTint="#E6F0F3"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/lab_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_lab_img" />
+
+                <TextView
+                    android:id="@+id/txt_lab_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/lab_image"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="@string/test_lab"
+                    android:textColor="@color/purple_500"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_lab_shop"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/lab_image"
+                    android:fontFamily="@font/gilroy_light"
+                    android:text="@string/register_as_a_test_lab"
+                    android:textColor="@color/purple_500"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_right_back" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_10dp"
+                android:backgroundTint="@color/purple_500"
+                android:drawableRight="@drawable/ic_right_back"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:paddingLeft="35dp"
+                android:paddingTop="20dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="20dp"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

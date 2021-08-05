@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Faco Saller App</string>
+    <string name="welcome_to_faco">Welcome to Faco</string>
+    <string name="what_s_your_number">What\'s Your Number?</string>
+    <string name="we_will_text_you_a_code_to_verify_your_phone">We will text you a code to verify your \n Phone</string>
+    <string name="_10_digit_mobile_number">10 digit mobile number</string>
+    <string name="next">Next</string>
+    <string name="update_medicines">UPDATE MEDICINES</string>
+    <string name="please_enter_the_otp">Please Enter the OTP</string>
+    <string name="we_have_text_you_a_code_to_verify_your_phone">We have text you a code to verify your \n Phone</string>
+    <string name="resend">Resend OTP</string>
+    <string name="i_want_to_register_as_a">I want to register as a :</string>
+    <string name="medical_shop">Medical Shop</string>
+    <string name="register_as_a_medical_shop_owner">Register as a Medical Shop Owner</string>
+    <string name="test_lab">Test Lab</string>
+    <string name="register_as_a_test_lab">Register as a Test Lab</string>
+    <string name="contactless_digital_healthcare_solution">Contactless digital healthcare solution</string>
+    <string name="your_housepital">Your HousePital</string>
+    <string name="faco">Faco</string>
+    <string name="enter_your_test_center_name">ENTER YOUR TEST CENTER NAME</string>
+    <string name="tests_your_center_provides">TESTS YOUR CENTER PROVIDES</string>
+    <string name="enter_your_address">ENTER YOUR ADDRESS</string>
+    <string name="city">CITY</string>
+    <string name="state">STATE</string>
+    <string name="jaipur">Jaipur</string>
+    <string name="rajasthan">Rajasthan</string>
+    <string name="country">Country</string>
+    <string name="india">India</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="set_availability">Set Availability</string>
+    <string name="my_notification">Notifications</string>
+    <string name="my_profile">My Profile</string>
+    <string name="patient_feedback">Patients Feedback</string>
+    <string name="user_menu">Faco</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="emergency">EMERGENCY</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

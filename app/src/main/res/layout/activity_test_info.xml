@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestInfoActivity"
+    android:background="@color/app_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_toolbar_layout" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15sp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="35dp"
+                android:orientation="vertical">
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:id="@+id/rt"-->
+                <!--                android:layout_marginRight="15dp"-->
+                <!--                android:layout_marginLeft="15dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                >-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.025"
+                    android:text="@string/enter_your_test_center_name"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etltname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Enter Clinic Name"
+                    android:singleLine="true"
+                    android:textColor="#575757"
+                    android:textSize="15dp"
+                    android:inputType="textCapWords"
+                    android:backgroundTint="@color/purple_500"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.025"
+                    android:text="@string/tests_your_center_provides"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etrgistor_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Tests"
+                    android:singleLine="true"
+                    android:textColor="#575757"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/purple_500"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.025"
+                    android:text="@string/enter_your_address"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_specialisation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Enter Your Address"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="#575757"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/purple_500"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:letterSpacing="0.025"
+                        android:text="@string/city"
+                        android:textColor="@color/purple_500"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:letterSpacing="0.025"
+                        android:text="@string/state"
+                        android:textColor="@color/purple_500"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="12sp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/et_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:hint="@string/city"
+                        android:text="@string/jaipur"
+                        android:singleLine="true"
+                        android:textColor="#575757"
+                        android:inputType="textCapWords"
+                        android:layout_marginRight="30dp"
+                        android:textSize="15dp"
+                        android:backgroundTint="@color/purple_500"
+                        />
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/et_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:hint="Your State"
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:text="@string/rajasthan"
+                        android:textColor="#575757"
+                        android:layout_marginRight="10dp"
+                        android:textSize="15dp"
+                        android:backgroundTint="@color/purple_500"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.025"
+                    android:text="@string/country"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="@string/country"
+                    android:singleLine="true"
+                    android:text="@string/india"
+                    android:inputType="textCapWords"
+                    android:textColor="#575757"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/purple_500"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/background_10dp"
+            android:drawableEnd="@drawable/ic_right_back"
+            android:drawablePadding="20dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:paddingLeft="40dp"
+            android:paddingTop="15sp"
+            android:paddingRight="40dp"
+            android:paddingBottom="15sp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
