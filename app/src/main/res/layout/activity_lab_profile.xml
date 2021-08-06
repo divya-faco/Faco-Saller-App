@@ -1,9 +1,501 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LabProfileActivity">
+    tools:context=".activity.LabProfileActivity"
+    android:background="@color/app_background"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/linear_lay"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/purple_500">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/nav_icon"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="18dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/nav_icon" />-->
+
+            <ImageView
+                android:id="@+id/userbig_image_view1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:alpha=".25"
+                android:background="@color/purple_500"
+                android:paddingTop="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_person" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cart_1"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/user_image_view2"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_person" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/liner_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    android:textColor="#686868"
+                    android:textSize="18dp" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_user_specalize"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:fontFamily="@font/gilroy_light"-->
+<!--                    android:text="@string/sr_psychiatrist_8_years_experience"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="12dp" />-->
+
+                <TextView
+                    android:id="@+id/txt_user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:text="@string/arthurreese_gmail_com"
+                    android:textAlignment="center"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:rating="0.0"
+                        android:theme="@style/RatingBar" />
+
+                    <TextView
+                        android:id="@+id/txt_rating_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/gilroy_light"
+                        android:text="@string/_0_reviews"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="170dp"
+                android:layout_toRightOf="@id/cart_1"
+                android:background="@drawable/background_16dp"
+                android:src="@drawable/ic_edit__6__3"
+                app:backgroundTint="@color/edit_profile"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_layout_1"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cart_specializations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="#FCFDFF"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/specializations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_specializations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="@string/drug_license"
+                        android:textColor="#686868"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_specializations"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down"
+                        android:padding="10dp"
+                        app:backgroundTint="#686868" />
+
+                    <LinearLayout
+                        android:id="@+id/specializations_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_specializations"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_specializations_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="@string/drug_license"
+                            android:textColor="#646464" />
+
+                        <Button
+                            android:id="@+id/btn_sp_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15sp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/background_14"
+                            android:fontFamily="@font/gilroy_extra_bold"
+                            android:letterSpacing="0.025"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/edit_now"
+                            android:textAllCaps="false"
+                            android:textColor="#E58E13"
+                            app:backgroundTint="#FFEFBB" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cart_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="#FCFDFF"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="@string/sellers_address"
+                        android:textColor="#686868"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_education"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down"
+                        android:padding="10dp"
+                        app:backgroundTint="#686868" />
+
+                    <LinearLayout
+                        android:id="@+id/education_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_education"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_education_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="@string/sellers_address"
+                            android:textColor="#646464" />
+
+                        <Button
+                            android:id="@+id/btn_education_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15sp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/background_14"
+                            android:fontFamily="@font/gilroy_extra_bold"
+                            android:letterSpacing="0.025"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/edit_now"
+                            android:textAllCaps="false"
+                            android:textColor="#E58E13"
+                            app:backgroundTint="#FFEFBB" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cart_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                app:cardBackgroundColor="#FCFDFF"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_experience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="@string/policies_securities"
+                        android:textColor="#686868"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_experience"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down"
+                        android:padding="10dp"
+                        app:backgroundTint="#686868" />
+
+                    <LinearLayout
+                        android:id="@+id/experience_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_experience"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_experience_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="@string/policies_securities"
+                            android:textColor="#646464" />
+
+                        <Button
+                            android:id="@+id/btn_experience_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15sp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/background_14"
+                            android:fontFamily="@font/gilroy_extra_bold"
+                            android:letterSpacing="0.025"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/edit_now"
+                            android:textAllCaps="false"
+                            android:textColor="#E58E13"
+                            app:backgroundTint="#FFEFBB" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cart_appointment_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15sp"
+                app:cardBackgroundColor="#FCFDFF"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="3dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/appointment_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_appointment_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Update Charges"
+                        android:textColor="#686868"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_appointment_charge"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down"
+                        android:padding="10dp"
+                        app:backgroundTint="#686868" />
+
+                    <LinearLayout
+                        android:id="@+id/appointment_charge_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_appointment_charge"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_appoint_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/background_16dp"
+                            android:elevation="5dp"
+                            android:text="0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/home_txt"
+                            app:backgroundTint="@color/home_bg" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_appoint_clinic"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/background_16dp"
+                            android:elevation="5dp"
+                            android:text="0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/clinic_bg" />
+
+
+                        <Button
+                            android:id="@+id/btn_appointment_charge_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/background_14"
+                            android:fontFamily="@font/gilroy_extra_bold"
+                            android:letterSpacing="0.025"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/edit_now"
+                            android:textAllCaps="false"
+                            android:textColor="#E58E13"
+                            app:backgroundTint="#FFEFBB"
+
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

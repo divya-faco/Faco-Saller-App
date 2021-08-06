@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FacoSallerApp">
         <activity
+            android:name=".activity.AddLabInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PatientHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LabAppointmentActivity"
+            android:exported="true" />
+        <activity
             android:name=".activity.PatientFeedbackActivity"
             android:exported="true" />
         <activity

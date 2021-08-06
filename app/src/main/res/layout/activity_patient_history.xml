@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PatientHistoryActivity"
+    android:background="@color/app_background"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/custom_toolbar_layout"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:id="@+id/patient_history_recyclerview"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_view_patient_history"
+                android:layout_below="@id/patient_history_recyclerview"
+                android:layout_gravity="center"
+                android:text="@string/view_all_patients"
+                app:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                android:background="@drawable/background_16dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginTop="15sp"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.02"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <include layout="@layout/list_not_avalable_layout"/>
+    </LinearLayout>
+
+</RelativeLayout>
