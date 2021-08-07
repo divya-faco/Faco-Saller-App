@@ -15,8 +15,11 @@
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/background_20dp.xml" value="0.1787037037037037" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/background_30.xml" value="0.1685185185185185" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/badge_back.xml" value="0.1685185185185185" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/border_background.xml" value="0.16574074074074074" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/days_circle_border.xml" value="0.16574074074074074" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/home_appointment.xml" value="0.1685185185185185" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_add_medicine_24.xml" value="0.1712962962962963" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_baseline_check.xml" value="0.16574074074074074" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_baseline_check_circle.xml" value="0.1712962962962963" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_baseline_clear.xml" value="0.1712962962962963" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_baseline_home.xml" value="0.1712962962962963" />
@@ -25,6 +28,7 @@
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_baseline_person.xml" value="0.1712962962962963" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_baseline_search.xml" value="0.1685185185185185" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_edit__6__3.xml" value="0.1712962962962963" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_error_outline.xml" value="0.16574074074074074" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_lab_img.xml" value="0.2203125" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_medical_shop.xml" value="0.2203125" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/ic_splash_back.xml" value="0.2203125" />
@@ -41,6 +45,9 @@
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/notification_icon.xml" value="0.1712962962962963" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/patient_feedback.xml" value="0.1712962962962963" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/patient_history.xml" value="0.1685185185185185" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/radio_normal.xml" value="0.16574074074074074" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/radio_selected.xml" value="0.16574074074074074" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/radio_selector.xml" value="0.16574074074074074" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/rgister_background.xml" value="0.1787037037037037" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/select_navbar_back.xml" value="0.1712962962962963" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/drawable/splash_background.xml" value="0.22" />
@@ -57,6 +64,7 @@
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/activity_patient_history.xml" value="0.20416666666666666" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/activity_phone_auth.xml" value="0.20416666666666666" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/activity_seller_registration.xml" value="0.2" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/activity_set_availability.xml" value="0.20416666666666666" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/activity_test_info.xml" value="0.19010416666666666" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/app_bar_home.xml" value="0.20416666666666666" />
@@ -69,6 +77,8 @@
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/notification_layout.xml" value="0.21614583333333334" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/patient_feedback_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/patient_history_layout.xml" value="0.21614583333333334" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/show_date_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/layout/toast_icon_text.xml" value="0.21614583333333334" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Kotlin/FacoSallerApp/app/src/main/res/menu/home.xml" value="0.20416666666666666" />
       </map>

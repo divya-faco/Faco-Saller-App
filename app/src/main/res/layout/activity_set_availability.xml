@@ -1,9 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SetAvailabilityActivity">
+    tools:context=".activity.SetAvailabilityActivity"
+    android:background="@color/white"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border_background"
+                    android:padding="10dp"
+                    android:src="@drawable/left_arrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/custom_toolabar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.02"
+                    android:text="@string/set_availability"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_select_time_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/select_time_slot_for_video_consultation"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/jan_2020"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/days_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:letterSpacing="0.025"
+                android:padding="10dp"
+                android:text="@string/will_you_be_available_at_this_day"
+                android:textColor="@color/purple_500"
+                android:textSize="17dp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/yes_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:text="Yes"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/radio_text_color"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/no_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="No"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/radio_text_color"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/available_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:letterSpacing="0.025"
+                    android:padding="10dp"
+                    android:text="@string/online_consultation"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.025"
+                    android:padding="10dp"
+                    android:text="@string/from"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/et_from_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:fontFamily="@font/gilroy_light"
+                    android:backgroundTint="#E6E6E6"
+                    android:hint="@string/_8_00_am"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#E5E5E5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:letterSpacing="0.025"
+                    android:padding="10dp"
+                    android:text="@string/to"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/et_to_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_light"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:backgroundTint="#E6E6E6"
+                    android:hint="@string/_8_00_pm"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#E5E5E5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/not_available_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_close_appointent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13sp"
+                    android:paddingBottom="13sp"
+                    android:text="Close"
+                    android:textColor="#8D8D8D"
+                    app:backgroundTint="#E5E5E5"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_appoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/gilroy_light"
+                android:letterSpacing="0.025"
+                android:paddingTop="10dp"
+                android:text="Weekly Timings"
+                android:textColor="@color/purple_500"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/appoint_slot_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="7"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="M"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="T"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_wensday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="W"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_thusday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="T"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="F"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="S"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_30"
+                    android:backgroundTint="@color/textbox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="S"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:textColorHint="#8D8D8D" />
+            </LinearLayout>
+            <!--            </LinearLayout>-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_10dp"
+                android:drawableRight="@drawable/ic_right_back"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/continu"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:drawableTint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

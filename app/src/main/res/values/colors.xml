@@ -16,4 +16,8 @@
     <color name="home_txt">#347d64</color>
     <color name="home_bg">#FCE4EC</color>
     <color name="clinic_bg">#90CAF9</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_90">#263238</color>
+    <color name="success_toast">#F6C54B</color>
+    <color name="medicine_time">#5451DE</color>
 </resources>
